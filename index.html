@@ -4,79 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio Plam's</title>
     <link href="./dist/output.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="bg-[#1E67C5] text-white py-8 fixed left-0 w-full">
-        <nav class="flex px-8 place-content-between place-items-center">
-            <p class="font-bold text-[30px] text-white">Plam's</p>
+    <header class="bg-[#1E67C5] text-white py-4 md:px-8 fixed left-0 w-full z-20">
+        <nav class="flex items-center justify-between px-4 mx-auto md:px-8 max-w-7xl">
+            <p class="text-2xl font-bold text-white md:text-3xl">Plam's</p>
+            <div class="flex items-center space-x-4">
 
-            <!-- <input type="checkbox" id="menu-toggle" class="hidden">
+                <ul class="items-center hidden font-bold lg:flex lg:gap-6 lg:pl-8 lg:ml-8">
+                    <li><a href="#" class="border-b-2 border-transparent cursor-pointer hover:border-blue-100">ABOUT</a>
+                    </li>
+                    <li><a href="#" class="border-b-2 border-transparent cursor-pointer hover:border-blue-100">WORKS</a>
+                    </li>
+                    <li><a href="#" class="border-b-2 border-transparent cursor-pointer hover:border-blue-100">GET
+                            CV</a></li>
+                    <li><a href="#" class="border-b-2 border-transparent cursor-pointer hover:border-blue-100">FOLLOW
+                            ME</a></li>
+                </ul>
 
-            <label for="menu-toggle" class="flex flex-col justify-between w-6 h-6 cursor-pointer md:hidden">
-                <span class="block h-0.5 w-full bg-white"></span>
-                <span class="block h-0.5 w-full bg-white"></span>
-                <span class="block h-0.5 w-full bg-white"></span>
-            </label> -->
+                <div class="flex items-center space-x-2 md:space-x-3">
+                    <a href="#" class="cursor-pointer"><img src="assets/github-svgrepo-com(1).svg" alt="GitHub logo"
+                            class="w-6 md:w-8 hover:bg-cyan-600"></a>
+                    <a href="#" class="cursor-pointer"><img src="assets/mdi--linkedin.svg" alt="LinkedIn logo"
+                            class="w-6 md:w-8 hover:bg-cyan-600"></a>
+                </div>
 
-            <ul class="flex gap-3 pl-24 ml-8 font-bold">
-                <li><a href="#" class="border-b-2 border-transparent cursor-pointer hover:border-blue-100">ABOUT</a>
-                </li>
-                <li><a href="#" class="border-b-2 border-transparent cursor-pointer hover:border-blue-100">WORKS</a>
-                </li>
-                <li><a href="#" class="border-b-2 border-transparent cursor-pointer hover:border-blue-100">GET CV</a>
-                </li>
-                <li><a href=" #" class="border-b-2 border-transparent cursor-pointer hover:border-blue-100">FOLLOW
-                        ME</a></li>
-                <li>
-                    <div class="flex pr-2 space-x-1 place-items-center">
-                        <a href="#" class="cursor-pointer"><img src="assets/github-svgrepo-com(1).svg" alt="GitHub logo"
-                                class="w-8 hover:bg-cyan-600"></a>
-                        <a href="#" class="cursor-pointer"><img src="assets/mdi--linkedin.svg" alt="LinkedIn logo"
-                                class="w-8 hover:bg-cyan-600"></a>
-                    </div>
-                </li>
-            </ul>
+                <a class="flex flex-col justify-around w-6 h-6 cursor-pointer lg:hidden" id="menu-button">
+                    <span class="block h-0.5 w-full bg-white transition duration-300"></span>
+                    <span class="block h-0.5 w-full bg-white transition duration-300"></span>
+                    <span class="block h-0.5 w-full bg-white transition duration-300"></span>
+                </a>
+            </div>
         </nav>
+
+        <div id="mobile-menu" class="absolute top-full left-0 w-full bg-[#1E67C5] shadow-lg lg:hidden 
+                                      transform transition-all duration-300 -translate-y-full">
+            <ul class="flex flex-col py-2 font-bold text-center divide-y divide-blue-700">
+                <li><a href="#" class="block py-3 hover:bg-blue-700">ABOUT</a></li>
+                <li><a href="#" class="block py-3 hover:bg-blue-700">WORKS</a></li>
+                <li><a href="#" class="block py-3 hover:bg-blue-700">GET CV</a></li>
+                <li><a href="#" class="block py-3 hover:bg-blue-700">FOLLOW ME</a></li>
+            </ul>
+        </div>
     </header>
 
-    <main class=" bg-[#0074BD] w-auto h-auto pt-28 pb-12">
-        <!-- <h1 class="text-4xl font-bold text-blue-700">Tailwind fonctionne 🎉</h1>
-        <p class="mt-4 text-gray-700">Voici un paragraphe stylé avec Tailwind.</p>
-        <p class="text-gray-700 ">j</p> -->
-        <section class="flex items-center justify-between px-12 text-center">
-            <div class="w-1/2 ml-10">
-                <img src="assets/pk.png" alt="author's profile Plam's" class="pX-12 w-96">
+    <main class="bg-[#0074BD] w-auto h-auto pt-20 pb-10 min-h-screen">
+
+        <section
+            class="flex flex-col items-center justify-center px-4 pt-8 md:flex-row md:justify-between md:items-start md:px-8 md:w-full">
+            <div class="mb-6 md:w-1/2">
+                <img src="assets/pk.png" alt="author's profile Plam's" class="w-40 md:w-96 md:px-10 lg:px-12">
             </div>
-            <article class="w-1/2 pr-10 text-center">
-                <h1 class="font-bold text-[#AE0106] text-5xl">I AM <br> BEGINNERS</h1>
-                <h2 class="font-bold text-[#AE0106] text-4xl">Software Engineering</h2>
-                <p class="px-12 text-3xl text-white">Technology, software and development and design are my passions.
-                </p>
-                <div class="flex justify-center pt-12 gap-9">
+
+            <article class="flex flex-col items-center md:w-1/2 md:pr-10">
+                <h1
+                    class="font-bold text-[#AE0106] text-3xl text-center md:text-4xl lg:text-5xl md:text-left lg:text-center">
+                    I AM
+                    <br>BEGINNERS
+                </h1>
+                <h2
+                    class="font-bold text-[#AE0106] text-2xl md:text-3xl lg:text-4xl md:text-left lg:text-center md:pl-6">
+                    Software
+                    Engineering </h2>
+                <p class="max-w-lg mt-4 text-base text-justify text-white md:text-xl lg:text-center md:pl-6 md:mt-auto">
+                    Technology,
+                    software
+                    and
+                    development and
+                    design
+                    are my passions.</p>
+
+                <div class="flex justify-center gap-4 pt-8 md:gap-6 md:pt-3">
                     <a href="#"
-                        class="px-16 py-3 font-bold text-[#1E67C5] border-2 border-solid border-[#1E67C5] rounded-2xl bg-white hover:bg-[#1E67C5] hover:text-white hover:border-white transition duration-300 cursor-pointer">Writte
+                        class="px-6 py-2 md:px-8 lg:px-10 md:py-3 font-bold text-[#1E67C5] border-2 border-solid border-[#1E67C5] rounded-xl bg-white hover:bg-[#1E67C5] hover:text-white hover:border-white transition duration-300">Writte
                         me</a>
                     <a href="#"
-                        class="px-16 py-2 font-bold text-white border-2 border-indigo-100 rounded-2xl hover:bg-[#abcbf5] hover:text-[#1E67C5] hover:border-[#abcbf5] transition duration-300 cursor-pointer">
-                        My CV
-                    </a>
+                        class="px-6 py-2 md:px-8 lg:px-10 md:py-3 font-bold text-white border-2 border-indigo-100 rounded-xl hover:bg-[#abcbf5] hover:text-[#1E67C5] hover:border-[#abcbf5] transition duration-300">My
+                        CV</a>
                 </div>
             </article>
         </section>
-        <section class="flex justify-center w-full py-10 px-28">
-            <article class="w-1/2">
-                <h1 class="text-6xl font-bold text-white leading">ABOUT <br> ME</h1>
-                <p class="pt-12 text-2xl font-bold text-white">Follow me on</p>
-                <div class="flex items-center py-20">
-                    <img src="assets/github-svgrepo-com(1).svg" alt="Icone GitHub" class="w-16 cursor-pointer">
-                    <img src="assets/mdi--linkedin.svg" alt="Icone LinkedIn" class="w-16 cursor-pointer">
+
+        <section class="flex flex-col justify-center w-full px-4 py-10 mx-auto md:flex-row md:px-8 max-w-7xl">
+
+            <article class="w-full mb-8 md:w-1/2">
+                <h1 class="text-4xl font-bold leading-tight text-center text-white md:text-6xl md:text-left">
+                    ABOUT <br class="hidden md:block">
+                    ME</h1>
+
+                <p class="pt-6 text-xl font-bold text-center text-white md:text-2xl md:text-left">
+                    Follow me on
+                </p>
+
+                <div class="flex items-center justify-center py-4 space-x-4 md:justify-start md:py-8">
+                    <img src="assets/github-svgrepo-com(1).svg" alt="Icone GitHub" class="w-10 cursor-pointer md:w-16">
+                    <img src="assets/mdi--linkedin.svg" alt="Icone LinkedIn" class="w-10 cursor-pointer md:w-16">
                 </div>
             </article>
-            <div class="w-1/2">
-                <p class="py-12 px-14 text-justify text-white bg-[rgba(255,250,250,0.31)] rounded-2xl text-2xl">
+
+            <div class="w-full md:w-1/2">
+                <p
+                    class="p-6 text-justify text-white bg-[rgba(255,250,250,0.31)] rounded-2xl text-base md:text-xl leading-relaxed">
                     Hello ! I’m Plamedie KIMPAMBUDI I'm a beginner in development with a degree in IT management and I'm
                     a student at the KADEA Academy, June 2025 cohort. Indeed, the world of development fascinates me
                     because it contributes to the development and progress of our communities in various fields, where
@@ -85,82 +116,119 @@
                 </p>
             </div>
         </section>
-        <section class="flex flex-col items-center justify-center">
-            <h1 class="py-6 text-6xl font-bold text-white">TECHNOLOGY</h1>
-            <div class="grid items-center justify-center grid-cols-4 py-8 mx-auto gap-x-16 gap-y-8 max-w-7xl">
 
-                <div><img src="assets/html-5-svgrepo-com.svg" alt="Icone HTML" class="w-20"></div>
-                <div><img src="assets/css-3-svgrepo-com.svg" alt="Icone CSS" class="w-20"></div>
-                <div><img src="assets/vscode-icons--file-type-vbproj.svg" alt="Icone Vb.net" class="w-20"></div>
-                <div><img src="assets/Bootstrap_logo.svg.png" alt="Icone Bootstrap" class="w-20"></div>
+        <section class="flex flex-col items-center justify-center px-4 py-10">
+            <h1 class="py-6 text-4xl font-bold text-white md:text-6xl">TECHNOLOGY</h1>
 
+            <div
+                class="grid w-full max-w-4xl grid-cols-3 mx-auto md:grid-cols-4 lg:grid-cols-4 gap-x-4 gap-y-8 md:gap-x md:gap-y-2">
 
-                <div><img src="assets/wordpress-svgrepo-com.svg" alt="Icone Wordpress" class="w-20"></div>
-                <div><img src="assets/php-logo-svgrepo-com.svg" alt="Icone PHP" class="w-20"></div>
-                <div><img src="assets/java-svgrepo-com.svg" alt="Icone Java" class="w-20"></div>
-                <div><img src="assets/adobe-photoshop-svgrepo-com.svg" alt="Icone PhotoShop" class="w-20"></div>
-
-                <div><img src="assets/adobe-illustrator-svgrepo-com.svg" alt="Icone Wordpress" class="w-20"></div>
-                <div><img src="assets/icons8-vent-arrièrecss.svg" alt="Icone MySql" class="w-20"></div>
-                <div><img src="assets/microsoft-sql-server-logo-svgrepo-com.svg" alt="Icone MS Sql Server" class="w-20">
-                </div>
-                <div><img src="assets/icons8-javascript.svg" alt="Icone MySql" class="w-20"></div>
+                <div class="flex justify-center"><img src="assets/html-5-svgrepo-com.svg" alt="Icone HTML"
+                        class="w-12 md:w-20"></div>
+                <div class="flex justify-center"><img src="assets/css-3-svgrepo-com.svg" alt="Icone CSS"
+                        class="w-12 md:w-20"></div>
+                <div class="flex justify-center"><img src="assets/vscode-icons--file-type-vbproj.svg" alt="Icone Vb.net"
+                        class="w-12 md:w-20"></div>
+                <div class="flex justify-center"><img src="assets/Bootstrap_logo.svg.png" alt="Icone Bootstrap"
+                        class="w-12 md:w-20"></div>
+                <div class="flex justify-center"><img src="assets/wordpress-svgrepo-com.svg" alt="Icone Wordpress"
+                        class="w-12 md:w-20"></div>
+                <div class="flex justify-center"><img src="assets/php-logo-svgrepo-com.svg" alt="Icone PHP"
+                        class="w-12 md:w-20"></div>
+                <div class="flex justify-center"><img src="assets/java-svgrepo-com.svg" alt="Icone Java"
+                        class="w-12 md:w-20"></div>
+                <div class="flex justify-center"><img src="assets/adobe-photoshop-svgrepo-com.svg" alt="Icone PhotoShop"
+                        class="w-12 md:w-20"></div>
+                <div class="flex justify-center"><img src="assets/adobe-illustrator-svgrepo-com.svg"
+                        alt="Icone Wordpress" class="w-16 md:w-20"></div>
+                <div class="flex justify-center"><img src="assets/icons8-vent-arrièrecss.svg" alt="Icone MySql"
+                        class="w-12 md:w-20"></div>
+                <div class="flex justify-center"><img src="assets/microsoft-sql-server-logo-svgrepo-com.svg"
+                        alt="Icone MS Sql Server" class="w-16 md:w-20"></div>
+                <div class="flex justify-center"><img src="assets/icons8-javascript.svg" alt="Icone JavaScript"
+                        class="w-12 md:w-20"></div>
             </div>
         </section>
-        <section
-            class="relative bg-[url(/assets/code.jpg)] bg-cover bg-center min-h-[60vh] justify-center items-center text-center mx-10 p-6 rounded-2xl">
-            <div class="absolute inset-0 p-5 bg-black opacity-50 rounded-2xl"></div>
-            <h2 class="relative py-20 text-5xl font-bold tracking-wider text-white">MY WORKS</h2>
+
+        <section class="relative mx-4 md:mx-10 my-10 bg-[url(/assets/code.jpg)] bg-cover bg-center min-h-[40vh] 
+                        flex items-center justify-center rounded-2xl border-4 border-[#1E67C5]">
+            <div class="absolute inset-0 bg-black opacity-50 rounded-2xl"></div>
+            <h2 class="relative z-10 text-3xl font-bold tracking-wider text-white md:text-5xl">MY WORKS</h2>
         </section>
-        <section class="flex-col items-start justify-center gap-5 py-8 text-center">
-            <div class="flex items-center justify-center"><img src="assets/iconoir--design-pencil(1).svg"
-                    alt="Icone du design" class="w-20 pt-5">
+
+        <section class="flex flex-col items-center justify-center px-4 py-8 text-center">
+            <div class="flex flex-col items-center justify-center">
+                <img src="assets/iconoir--design-pencil(1).svg" alt="Icone du design" class="w-16 pt-5">
             </div>
-            <h3 class="pt-5 text-4xl font-bold text-white">UI/UX <br> DESIGN</h3>
-            <p class="text-[2rem] font-light text-white px-20">Able to create user interfaces using tools
-                such as
-                Figma that
-                meet user
-                needs.</p>
-            <div class="flex items-center justify-center"><img src="assets/figma-svgrepo-com.svg" alt="Icone Figma"
-                    class="w-20 pt-5"></div>
+            <h3 class="pt-5 text-3xl font-bold text-white md:text-4xl">UI/UX <br> DESIGN</h3>
+            <p class="max-w-lg mt-4 text-xl font-light text-white md:text-2xl">
+                Able to create user interfaces using tools such as Figma that meet user needs.
+            </p>
+            <div class="flex items-center justify-center">
+                <img src="assets/figma-svgrepo-com.svg" alt="Icone Figma" class="w-16 pt-5">
+            </div>
         </section>
-        <section class="relative flex-col items-center text-center  bg-[rgba(255,250,250,0.31)] rounded-2xl mx-16 py-8">
-            <h4 class="py-5 text-3xl font-bold text-center text-white">Contact me</h4>
-            <form action="" class="relative p-8 text-center">
-                <div class="flex items-center justify-center py-2">
-                    <label for="name" class="text-2xl text-white">Name : </label>
-                    <input type="text" id="name" class=" h-auto rounded-[5px]">
-                </div>
-                <div class="flex items-center justify-center py-2">
-                    <label for="name" class="text-2xl text-white">Email : </label>
-                    <input type="email" id="name" class=" h-auto rounded-[5px]">
-                </div>
-                <div class="flex items-center justify-center py-2">
-                    <label for="name" class="text-2xl text-white ">Message : </label>
-                    <textarea id="name" class=" h-auto rounded-[5px]"></textarea>
-                </div>
-                <div class="w-full py-5">
-                    <a href="#"
-                        class="text-white w-[100%] bg-[#1E67C5] font-bold px-20 py-3 border-2 border-solid rounded-xl hover:bg-slate-50 hover:text-[#1E67C5] hover:border-[#1E67C5]  transition duration-300 cursor-pointer">SUBMIT</a>
-                </div>
-            </form>
+
+        <section class="flex justify-center px-4 py-8">
+            <div class="bg-[rgba(255,250,250,0.31)] p-6 rounded-2xl max-w-md w-full shadow-2xl md:w-3/4">
+                <h4 class="mb-6 text-3xl font-bold text-center text-white">Contact me</h4>
+                <form action="" class="flex flex-col space-y-4">
+
+                    <div class="flex flex-col justify-between md:flex-row md:items-center">
+                        <label for="name" class="mb-1 text-xl text-left text-white md:mb-0 md:w-1/4">Name :</label>
+                        <input type="text" id="name"
+                            class="w-full p-2 text-gray-800 rounded md:w-3/4 focus:outline-none">
+                    </div>
+
+                    <div class="flex flex-col justify-between md:flex-row md:items-center">
+                        <label for="email" class="mb-1 text-xl text-left text-white md:mb-0 md:w-1/4">Email :</label>
+                        <input type="email" id="email"
+                            class="w-full p-2 text-gray-800 rounded md:w-3/4 focus:outline-none">
+                    </div>
+
+                    <div class="flex flex-col justify-between md:flex-row md:items-start">
+                        <label for="message" class="mb-1 text-xl text-left text-white md:mb-0 md:w-1/4">Message
+                            :</label>
+                        <textarea id="message" rows="4"
+                            class="w-full p-2 text-gray-800 rounded md:w-3/4 focus:outline-none"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-[#0074BD] border-2 border-indigo-100 text-white font-bold py-3 rounded-xl hover:bg-slate-50 hover:text-[#1E67C5] hover:border-[#1E67C5] transition duration-300 mt-4">
+                        SUBMIT
+                    </button>
+                </form>
+            </div>
         </section>
+
     </main>
 
-    <footer class="bg-[#1E67C5] flex-col py-5 justify-center items-center text-center border-t-2">
-        <div class="font-bold text-[30px] text-white">Plam's</div>
-        <p class="font-bold text-[15px] text-white py-4">pkimpambudi@gmail.com</p>
-        <div class="flex-col text-center py-4">
-            <p class="font-bold text-[15px] text-white py-2">Follow me on</p>
-            <div class="flex text-center justify-center items-center">
+    <footer class="bg-[#1E67C5] flex flex-col py-5 justify-center items-center text-center border-t-2 border-[#1E67C5]">
+        <div class="text-3xl font-bold text-white">Plam's</div>
+        <p class="py-2 text-base font-bold text-white">pkimpambudi@gmail.com</p>
+        <div class="flex flex-col py-2 text-center">
+            <p class="py-1 text-base font-bold text-white">Follow me on</p>
+            <div class="flex items-center justify-center space-x-4 text-center">
                 <img src="assets/github-svgrepo-com(1).svg" alt="Icone GitHub" class="w-8 cursor-pointer">
                 <img src="assets/mdi--linkedin.svg" alt="Icone LinkedIn" class="w-8 cursor-pointer">
             </div>
         </div>
-        <p class="font-bold text-[15px] text-white py-1">Design & Built by Plamedie KIMPAMBUDI Plam's</p>
-        <p class="font-bold text-[15px] text-white py-1">Copyright 2025 Plamedie KIMPAMBUDI Plam's</p>
+        <p class="pt-4 text-xs font-bold text-white">Design & Built by Plamedie KIMPAMBUDI Plam's</p>
+        <p class="text-xs font-bold text-white">Copyright 2025 Plamedie KIMPAMBUDI Plam's</p>
     </footer>
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (menuButton && mobileMenu) {
+            menuButton.addEventListener('click', () => {
+                // Bascule entre l'état masqué et l'état visible
+                mobileMenu.classList.toggle('-translate-y-full');
+                mobileMenu.classList.toggle('translate-y-0');
+            });
+        }
+    </script>
 </body>
 
 </html>
