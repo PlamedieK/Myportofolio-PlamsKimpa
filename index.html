@@ -9,12 +9,12 @@
 </head>
 
 <body>
-    <header class="bg-[#1E67C5] text-white py-4 fixed left-0 w-full z-20">
-        <nav class="flex px-4 md:px-8 justify-between items-center max-w-7xl mx-auto">
-            <p class="font-bold text-2xl md:text-3xl text-white">Plam's</p>
+    <header class="bg-[#1E67C5] text-white py-4 md:px-8 fixed left-0 w-full z-20">
+        <nav class="flex items-center justify-between px-4 mx-auto md:px-8 max-w-7xl">
+            <p class="text-2xl font-bold text-white md:text-3xl">Plam's</p>
             <div class="flex items-center space-x-4">
 
-                <ul class="hidden lg:flex lg:gap-6 lg:pl-8 lg:ml-8 font-bold items-center">
+                <ul class="items-center hidden font-bold lg:flex lg:gap-6 lg:pl-8 lg:ml-8">
                     <li><a href="#" class="border-b-2 border-transparent cursor-pointer hover:border-blue-100">ABOUT</a>
                     </li>
                     <li><a href="#" class="border-b-2 border-transparent cursor-pointer hover:border-blue-100">WORKS</a>
@@ -25,14 +25,14 @@
                             ME</a></li>
                 </ul>
 
-                <div class="flex space-x-2 items-center md:space-x-3">
+                <div class="flex items-center space-x-2 md:space-x-3">
                     <a href="#" class="cursor-pointer"><img src="assets/github-svgrepo-com(1).svg" alt="GitHub logo"
                             class="w-6 md:w-8 hover:bg-cyan-600"></a>
                     <a href="#" class="cursor-pointer"><img src="assets/mdi--linkedin.svg" alt="LinkedIn logo"
                             class="w-6 md:w-8 hover:bg-cyan-600"></a>
                 </div>
 
-                <a class="flex flex-col justify-around w-6 h-6 lg:hidden cursor-pointer" id="menu-button">
+                <a class="flex flex-col justify-around w-6 h-6 cursor-pointer lg:hidden" id="menu-button">
                     <span class="block h-0.5 w-full bg-white transition duration-300"></span>
                     <span class="block h-0.5 w-full bg-white transition duration-300"></span>
                     <span class="block h-0.5 w-full bg-white transition duration-300"></span>
@@ -42,7 +42,7 @@
 
         <div id="mobile-menu" class="absolute top-full left-0 w-full bg-[#1E67C5] shadow-lg lg:hidden 
                                       transform transition-all duration-300 -translate-y-full">
-            <ul class="flex flex-col text-center divide-y divide-blue-700 font-bold py-2">
+            <ul class="flex flex-col py-2 font-bold text-center divide-y divide-blue-700">
                 <li><a href="#" class="block py-3 hover:bg-blue-700">ABOUT</a></li>
                 <li><a href="#" class="block py-3 hover:bg-blue-700">WORKS</a></li>
                 <li><a href="#" class="block py-3 hover:bg-blue-700">GET CV</a></li>
@@ -54,42 +54,54 @@
     <main class="bg-[#0074BD] w-auto h-auto pt-20 pb-10 min-h-screen">
 
         <section
-            class="flex flex-col items-center justify-center px-4 md:flex-row md:justify-between md:items-start md:px-8 pt-8 md:w-full">
+            class="flex flex-col items-center justify-center px-4 pt-8 md:flex-row md:justify-between md:items-start md:px-8 md:w-full">
             <div class="mb-6 md:w-1/2">
-                <img src="assets/pk.png" alt="author's profile Plam's" class="w-40 md:w-72 mx-auto">
+                <img src="assets/pk.png" alt="author's profile Plam's" class="w-40 md:w-96 md:px-10 lg:px-12">
             </div>
 
-            <article class="flex flex-col items-center md:w-1/2">
-                <h1 class="font-bold text-[#AE0106] text-3xl text-center md:text-5xl">I AM <br> BEGINNERS</h1>
-                <h2 class="font-bold text-[#AE0106] text-2xl md:text-4xl">Software Engineering</h2>
-                <p class="mt-4 text-base md:text-xl text-white max-w-lg lg:text-center">Technology, software and
+            <article class="flex flex-col items-center md:w-1/2 md:pr-10">
+                <h1
+                    class="font-bold text-[#AE0106] text-3xl text-center md:text-4xl lg:text-5xl md:text-left lg:text-center">
+                    I AM
+                    <br>BEGINNERS
+                </h1>
+                <h2
+                    class="font-bold text-[#AE0106] text-2xl md:text-3xl lg:text-4xl md:text-left lg:text-center md:pl-6">
+                    Software
+                    Engineering </h2>
+                <p class="max-w-lg mt-4 text-base text-justify text-white md:text-xl lg:text-center md:pl-6 md:mt-auto">
+                    Technology,
+                    software
+                    and
                     development and
                     design
                     are my passions.</p>
 
-                <div class="flex justify-center pt-8 gap-4 md:gap-9">
+                <div class="flex justify-center gap-4 pt-8 md:gap-6 md:pt-3">
                     <a href="#"
-                        class="px-6 py-2 md:px-10 md:py-3 font-bold text-[#1E67C5] border-2 border-solid border-[#1E67C5] rounded-xl bg-white hover:bg-[#1E67C5] hover:text-white hover:border-white transition duration-300">Writte
+                        class="px-6 py-2 md:px-8 lg:px-10 md:py-3 font-bold text-[#1E67C5] border-2 border-solid border-[#1E67C5] rounded-xl bg-white hover:bg-[#1E67C5] hover:text-white hover:border-white transition duration-300">Writte
                         me</a>
                     <a href="#"
-                        class="px-6 py-2 md:px-10 md:py-3 font-bold text-white border-2 border-indigo-100 rounded-xl hover:bg-[#abcbf5] hover:text-[#1E67C5] hover:border-[#abcbf5] transition duration-300">My
+                        class="px-6 py-2 md:px-8 lg:px-10 md:py-3 font-bold text-white border-2 border-indigo-100 rounded-xl hover:bg-[#abcbf5] hover:text-[#1E67C5] hover:border-[#abcbf5] transition duration-300">My
                         CV</a>
                 </div>
             </article>
         </section>
 
-        <section class="flex flex-col md:flex-row justify-center w-full py-10 px-4 md:px-8 max-w-7xl mx-auto">
+        <section class="flex flex-col justify-center w-full px-4 py-10 mx-auto md:flex-row md:px-8 max-w-7xl">
 
-            <article class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-10">
-                <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight text-center">ABOUT <br
-                        class="hidden">
+            <article class="w-full mb-8 md:w-1/2">
+                <h1 class="text-4xl font-bold leading-tight text-center text-white md:text-6xl md:text-left">
+                    ABOUT <br class="hidden md:block">
                     ME</h1>
 
-                <p class="pt-6 text-xl md:text-2xl font-bold text-white text-center">Follow me on</p>
+                <p class="pt-6 text-xl font-bold text-center text-white md:text-2xl md:text-left">
+                    Follow me on
+                </p>
 
-                <div class="flex items-center justify-center md:justify-start py-4 md:py-8 space-x-4">
-                    <img src="assets/github-svgrepo-com(1).svg" alt="Icone GitHub" class="w-10 md:w-16 cursor-pointer">
-                    <img src="assets/mdi--linkedin.svg" alt="Icone LinkedIn" class="w-10 md:w-16 cursor-pointer">
+                <div class="flex items-center justify-center py-4 space-x-4 md:justify-start md:py-8">
+                    <img src="assets/github-svgrepo-com(1).svg" alt="Icone GitHub" class="w-10 cursor-pointer md:w-16">
+                    <img src="assets/mdi--linkedin.svg" alt="Icone LinkedIn" class="w-10 cursor-pointer md:w-16">
                 </div>
             </article>
 
@@ -105,50 +117,51 @@
             </div>
         </section>
 
-        <section class="flex flex-col items-center justify-center py-10 px-4">
-            <h1 class="py-6 text-4xl md:text-6xl font-bold text-white">TECHNOLOGY</h1>
+        <section class="flex flex-col items-center justify-center px-4 py-10">
+            <h1 class="py-6 text-4xl font-bold text-white md:text-6xl">TECHNOLOGY</h1>
 
-            <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-x-4 gap-y-8 max-w-4xl mx-auto w-full">
+            <div
+                class="grid w-full max-w-4xl grid-cols-3 mx-auto md:grid-cols-4 lg:grid-cols-4 gap-x-4 gap-y-8 md:gap-x md:gap-y-2">
 
                 <div class="flex justify-center"><img src="assets/html-5-svgrepo-com.svg" alt="Icone HTML"
-                        class="w-16 md:w-20"></div>
+                        class="w-12 md:w-20"></div>
                 <div class="flex justify-center"><img src="assets/css-3-svgrepo-com.svg" alt="Icone CSS"
-                        class="w-16 md:w-20"></div>
+                        class="w-12 md:w-20"></div>
                 <div class="flex justify-center"><img src="assets/vscode-icons--file-type-vbproj.svg" alt="Icone Vb.net"
-                        class="w-16 md:w-20"></div>
+                        class="w-12 md:w-20"></div>
                 <div class="flex justify-center"><img src="assets/Bootstrap_logo.svg.png" alt="Icone Bootstrap"
-                        class="w-16 md:w-20"></div>
+                        class="w-12 md:w-20"></div>
                 <div class="flex justify-center"><img src="assets/wordpress-svgrepo-com.svg" alt="Icone Wordpress"
-                        class="w-16 md:w-20"></div>
+                        class="w-12 md:w-20"></div>
                 <div class="flex justify-center"><img src="assets/php-logo-svgrepo-com.svg" alt="Icone PHP"
-                        class="w-16 md:w-20"></div>
+                        class="w-12 md:w-20"></div>
                 <div class="flex justify-center"><img src="assets/java-svgrepo-com.svg" alt="Icone Java"
-                        class="w-16 md:w-20"></div>
+                        class="w-12 md:w-20"></div>
                 <div class="flex justify-center"><img src="assets/adobe-photoshop-svgrepo-com.svg" alt="Icone PhotoShop"
-                        class="w-16 md:w-20"></div>
+                        class="w-12 md:w-20"></div>
                 <div class="flex justify-center"><img src="assets/adobe-illustrator-svgrepo-com.svg"
                         alt="Icone Wordpress" class="w-16 md:w-20"></div>
                 <div class="flex justify-center"><img src="assets/icons8-vent-arrièrecss.svg" alt="Icone MySql"
-                        class="w-16 md:w-20"></div>
+                        class="w-12 md:w-20"></div>
                 <div class="flex justify-center"><img src="assets/microsoft-sql-server-logo-svgrepo-com.svg"
                         alt="Icone MS Sql Server" class="w-16 md:w-20"></div>
                 <div class="flex justify-center"><img src="assets/icons8-javascript.svg" alt="Icone JavaScript"
-                        class="w-16 md:w-20"></div>
+                        class="w-12 md:w-20"></div>
             </div>
         </section>
 
         <section class="relative mx-4 md:mx-10 my-10 bg-[url(/assets/code.jpg)] bg-cover bg-center min-h-[40vh] 
                         flex items-center justify-center rounded-2xl border-4 border-[#1E67C5]">
             <div class="absolute inset-0 bg-black opacity-50 rounded-2xl"></div>
-            <h2 class="relative z-10 text-4xl md:text-5xl font-bold tracking-wider text-white">MY WORKS</h2>
+            <h2 class="relative z-10 text-3xl font-bold tracking-wider text-white md:text-5xl">MY WORKS</h2>
         </section>
 
-        <section class="flex flex-col items-center justify-center py-8 text-center px-4">
+        <section class="flex flex-col items-center justify-center px-4 py-8 text-center">
             <div class="flex flex-col items-center justify-center">
                 <img src="assets/iconoir--design-pencil(1).svg" alt="Icone du design" class="w-16 pt-5">
             </div>
-            <h3 class="pt-5 text-3xl md:text-4xl font-bold text-white">UI/UX <br> DESIGN</h3>
-            <p class="text-xl md:text-2xl font-light text-white mt-4 max-w-lg">
+            <h3 class="pt-5 text-3xl font-bold text-white md:text-4xl">UI/UX <br> DESIGN</h3>
+            <p class="max-w-lg mt-4 text-xl font-light text-white md:text-2xl">
                 Able to create user interfaces using tools such as Figma that meet user needs.
             </p>
             <div class="flex items-center justify-center">
@@ -156,28 +169,28 @@
             </div>
         </section>
 
-        <section class="flex justify-center py-8 px-4">
-            <div class="bg-[rgba(255,250,250,0.31)] p-6 rounded-2xl max-w-md w-full shadow-2xl">
-                <h4 class="text-white text-3xl font-bold mb-6 text-center">Contact me</h4>
+        <section class="flex justify-center px-4 py-8">
+            <div class="bg-[rgba(255,250,250,0.31)] p-6 rounded-2xl max-w-md w-full shadow-2xl md:w-3/4">
+                <h4 class="mb-6 text-3xl font-bold text-center text-white">Contact me</h4>
                 <form action="" class="flex flex-col space-y-4">
 
-                    <div class="flex flex-col md:flex-row md:items-center justify-between">
-                        <label for="name" class="text-xl text-white mb-1 md:mb-0 md:w-1/4 text-left">Name :</label>
+                    <div class="flex flex-col justify-between md:flex-row md:items-center">
+                        <label for="name" class="mb-1 text-xl text-left text-white md:mb-0 md:w-1/4">Name :</label>
                         <input type="text" id="name"
-                            class="w-full md:w-3/4 p-2 rounded text-gray-800 focus:outline-none">
+                            class="w-full p-2 text-gray-800 rounded md:w-3/4 focus:outline-none">
                     </div>
 
-                    <div class="flex flex-col md:flex-row md:items-center justify-between">
-                        <label for="email" class="text-xl text-white mb-1 md:mb-0 md:w-1/4 text-left">Email :</label>
+                    <div class="flex flex-col justify-between md:flex-row md:items-center">
+                        <label for="email" class="mb-1 text-xl text-left text-white md:mb-0 md:w-1/4">Email :</label>
                         <input type="email" id="email"
-                            class="w-full md:w-3/4 p-2 rounded text-gray-800 focus:outline-none">
+                            class="w-full p-2 text-gray-800 rounded md:w-3/4 focus:outline-none">
                     </div>
 
-                    <div class="flex flex-col md:flex-row md:items-start justify-between">
-                        <label for="message" class="text-xl text-white mb-1 md:mb-0 md:w-1/4 text-left">Message
+                    <div class="flex flex-col justify-between md:flex-row md:items-start">
+                        <label for="message" class="mb-1 text-xl text-left text-white md:mb-0 md:w-1/4">Message
                             :</label>
                         <textarea id="message" rows="4"
-                            class="w-full md:w-3/4 p-2 rounded text-gray-800 focus:outline-none"></textarea>
+                            class="w-full p-2 text-gray-800 rounded md:w-3/4 focus:outline-none"></textarea>
                     </div>
 
                     <button type="submit"
@@ -191,17 +204,17 @@
     </main>
 
     <footer class="bg-[#1E67C5] flex flex-col py-5 justify-center items-center text-center border-t-2 border-[#1E67C5]">
-        <div class="font-bold text-3xl text-white">Plam's</div>
-        <p class="font-bold text-base text-white py-2">pkimpambudi@gmail.com</p>
-        <div class="flex flex-col text-center py-2">
-            <p class="font-bold text-base text-white py-1">Follow me on</p>
-            <div class="flex text-center justify-center items-center space-x-4">
+        <div class="text-3xl font-bold text-white">Plam's</div>
+        <p class="py-2 text-base font-bold text-white">pkimpambudi@gmail.com</p>
+        <div class="flex flex-col py-2 text-center">
+            <p class="py-1 text-base font-bold text-white">Follow me on</p>
+            <div class="flex items-center justify-center space-x-4 text-center">
                 <img src="assets/github-svgrepo-com(1).svg" alt="Icone GitHub" class="w-8 cursor-pointer">
                 <img src="assets/mdi--linkedin.svg" alt="Icone LinkedIn" class="w-8 cursor-pointer">
             </div>
         </div>
-        <p class="font-bold text-xs text-white pt-4">Design & Built by Plamedie KIMPAMBUDI Plam's</p>
-        <p class="font-bold text-xs text-white">Copyright 2025 Plamedie KIMPAMBUDI Plam's</p>
+        <p class="pt-4 text-xs font-bold text-white">Design & Built by Plamedie KIMPAMBUDI Plam's</p>
+        <p class="text-xs font-bold text-white">Copyright 2025 Plamedie KIMPAMBUDI Plam's</p>
     </footer>
 
     <script>
