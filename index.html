@@ -11,7 +11,7 @@
 <body>
     <header class="bg-[#1E67C5] text-white py-4 md:px-8 fixed left-0 w-full z-20">
         <nav class="flex items-center justify-between px-4 mx-auto md:px-8 max-w-7xl">
-            <p class="text-2xl font-bold text-white md:text-3xl">Plam's</p>
+            <p class="text-2xl font-bold text-[#FFFF] md:text-3xl">Plam's</p>
             <div class="flex items-center space-x-4">
 
                 <ul class="items-center hidden font-bold lg:flex lg:gap-6 lg:pl-8 lg:ml-8">
@@ -32,17 +32,18 @@
                             class="w-6 md:w-8 hover:bg-cyan-600"></a>
                 </div>
 
-                <a class="flex flex-col justify-around w-6 h-6 cursor-pointer lg:hidden" id="menu-button">
-                    <span class="block h-0.5 w-full bg-white transition duration-300"></span>
-                    <span class="block h-0.5 w-full bg-white transition duration-300"></span>
-                    <span class="block h-0.5 w-full bg-white transition duration-300"></span>
+                <a class="flex flex-col justify-around w-6 h-6 cursor-pointer lg:hidden  outline-none transition-all"
+                    id="menu-button">
+                    <span class=" line1 block h-0.5 w-full bg-white transition duration-300"></span>
+                    <span class="line2 block h-0.5 w-full bg-white transition duration-300"></span>
+                    <span class="line3 block h-0.5 w-full bg-white transition duration-300"></span>
                 </a>
             </div>
         </nav>
 
         <div id="mobile-menu" class="absolute top-full left-0 w-full bg-[#1E67C5] shadow-lg lg:hidden 
-                                      transform transition-all duration-300 -translate-y-full">
-            <ul class="flex flex-col py-2 font-bold text-center divide-y divide-blue-700">
+                                      transform transition-all duration-300">
+            <ul class="flex-col py-2 font-bold text-center divide-y divide-blue-700 hidden">
                 <li><a href="#" class="block py-3 hover:bg-blue-700">ABOUT</a></li>
                 <li><a href="#" class="block py-3 hover:bg-blue-700">WORKS</a></li>
                 <li><a href="#" class="block py-3 hover:bg-blue-700">GET CV</a></li>
@@ -218,16 +219,16 @@
     </footer>
 
     <script>
-        const menuButton = document.getElementById('menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
+        const menu = document.getElementById("mobile-menu");
+        const btnBurger = document.getElementById("menu-button");
+        const ulMenu = document.querySelector("#mobile-menu ul");
 
-        if (menuButton && mobileMenu) {
-            menuButton.addEventListener('click', () => {
-                // Bascule entre l'état masqué et l'état visible
-                mobileMenu.classList.toggle('-translate-y-full');
-                mobileMenu.classList.toggle('translate-y-0');
-            });
-        }
+        btnBurger.addEventListener("click", () => {
+            ulMenu.classList.toggle("hidden");
+
+        });
+
+
     </script>
 </body>
 
